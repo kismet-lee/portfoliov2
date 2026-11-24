@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <!-- Primary Meta Tags -->
+    <title>MakeTraci Portfolio</title>
+    <meta name="title" content="MakeTraci" />
+    <meta
+      name="description"
+      content="Traci is a designer, developer and workshop instructor based in Osaka, Japan. Let's regain sovereignty on the web!"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://maketraci.work/"
+    />
+    <meta property="og:title" content="MakeTraci" />
+    <meta
+      property="og:description"
+      content="Traci is a designer, developer and workshop instructor based in Osaka, Japan. Let's regain sovereignty on the web!"
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/kismet-lee/portfolio/refs/heads/main/assets/web-image.webp"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://maketraci.work/"
+    />
+    <meta
+      property="twitter:title"
+      content="MakeTraci"
+    />
+    <meta
+      property="twitter:description"
+      content="Traci is a designer, developer and workshop instructor based in Osaka, Japan. Let's regain sovereignty on the web!"
+    />
+    <meta
+      property="twitter:image"
+      content="https://raw.githubusercontent.com/kismet-lee/portfolio/refs/heads/main/assets/web-image.webp"
+    />
+    
+
+    <!-- Meta Tags Generated with https://metatags.io -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="https://raw.githubusercontent.com/kismet-lee/portfolio/refs/heads/main/assets/favicon.ico" type="image/x-icon" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Destiny Simmons",
+  "alternateName": "Traci",
+  "url": "https://maketraci.work/",
+  "image": "https://maketraci.work/assets/profile-pic-3.webp",
+  "jobTitle": "Designer",
+  "email": "maketraci@gmail.com",
+  "birthPlace": "Philadelphia, PA",
+  "nationality": "American",
+  "gender": "Female"
+}
+</script>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Traci <span class="ghost">Destiny</span></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#workshops">Workshops</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="modeToggle" class="btn-toggle">
+              <img
+                src="./assets/theme_light.webp"
+                class="icon color-icon"
+                alt="Color theme change"
+                src-light="./assets/theme_light.webp"
+                src-dark="./assets/theme_dark.webp"
+              />
+            </button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Traci <span class="ghost">Destiny</span></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li>
+            <a href="#workshops" onclick="toggleMenu()">Workshops</a>
+          </li>
+          <li>
+            <a href="#experience" onclick="toggleMenu()"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="#projects" onclick="toggleMenu()">Projects</a>
+          </li>
+          <li>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+          <li>
+            <img
+              src="./assets/theme_light.webp"
+              id="modeToggle2"
+              class="icon color-icon"
+              src-light="./assets/theme_light.webp"
+              src-dark="./assets/theme_dark.webp"
+              alt="color theme icon"
+            />
+          </li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic-3.webp" class="profile-pic"
+        alt="Destiny Simmons' profile picture"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Creativity, Uniqueness, Nerve and Talent</p>
+        <h1 class="title">Traci <span class="ghost">Destiny</span></h1>
+        <h2 class="section__text__p2">
+          Frontend developer and designer
+        </h2>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="location.href='./#workshops'"
+          >
+            WORKSHOPS
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href='./#contact'"
+          >
+            CONTACT
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin_light.webp"
+            src-light="./assets/linkedin_light.webp"
+            src-dark="./assets/linkedin_dark.webp"
+            alt="My Linkedin profile"
+            class="icon linkedin-icon"
+          />
+          <a href="https://linkedin.com/in/destiny-simmons-2b010571/"
+            >Linkedin</a
+          >
+
+          <img
+            src="./assets/github_light.webp"
+            src-light="./assets/github_light.webp"
+            src-dark="./assets/github_dark.webp"
+            alt="My Github profile"
+            class="icon github-icon"
+          />
+          <a href="https://github.com/kismet-lee/">Github</a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get to know more</p>
+      <h2 class="title">About Traci</h2>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic-2.webp"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience_light.webp"
+                src-light="./assets/experience_light.webp"
+                src-dark="./assets/experience_dark.webp"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                5+ years <br />
+                Marketing and Design
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education_light.webp"
+                src-light="./assets/education_light.webp"
+                src-dark="./assets/education_dark.webp"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                BFA <br />
+                Bachelor's of Fine Arts
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Traci (preferred name) is a designer and marketing specialist
+              with 5+ years of experience in each field respectively.
+              Right now, she is currently employed as a web designer
+              with
+              <a href="https://www.waste-creative.jp/" style="text-decoration: none;"
+                >Waste Creative Japan</a
+              >. She has been living in Japan for 5 years and is active in the local Osaka design community.
+              From the beginning of 2026, she has planned and produced free Web Design workshops for the community.
+              Traci is an advocate for women in tech and an advocate for providing free and quality education for the greater community to learn new skills.
+              Not only is she a designer and marketing specialist, she is an illustrator and a frontend developer. 
+              She's currently learning web development and is looking for more opportunities to grow her skills in the field.
+              Check out some of Traci's work before you go!
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="./#workshops">
+        <img
+          src="./assets/arrow_light.webp"
+          src-light="./assets/arrow_light.webp"
+          src-dark="./assets/arrow_dark.webp"
+          alt="arrow icon"
+          class="icon arrow"
+        />  
+      </a>
+    </section>
+    <section id="workshops">
+      <p class="section__text__p1">Empowering the community through</p>
+      <h2 class="title">Free Web Design Workshops</h2>
+      <div class="workshop-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/workshop_5_traci.webp"
+            alt="Workshop picture"
+            class="workshop-pic"
+          />
+        </div>
+        <div class="workshop-details-container">
+          <div class="text-container text-style-1">
+            <p>
+              Traci has been hosting free web design workshops for the Osaka community since the beginning of 2026. 
+              The workshops are designed for beginners and intermediate learners. While learning web design and development, Traci hopes to empower the community to learn new skills and gain confidence.
+              Although small, the workshops have been well received and Traci looks to steadily expand the workshops in the future to reach more people in the community.
+              The workshops are held in English, and are open to anyone who is interested in learning more about web design and development. Soon enough, they will be held in Japanese too!
+              You can find more information about the workshops on Traci's Facebook page, 
+              and you can RSVP for the next workshop using the links below.
+            </p>
+          </div>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="location.href='https://www.facebook.com/profile.php?id=61592240894245'">LEARN MORE</button>
+            <button class="btn btn-color-1" onclick="location.href='https://forms.gle/j8TtWStNMGizeTFJ7'">RSVP NOW</button>
+          </div>
+        </div>
+      </div>
+      <a href="./#experience">
+        <img
+          src="./assets/arrow_light.webp"
+          src-light="./assets/arrow_light.webp"
+          src-dark="./assets/arrow_dark.webp"
+          alt="arrow icon"
+          class="icon arrow"
+        />  
+      </a>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Traci has a wide range of</p>
+      <h2 class="title">Experience</h2>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-containers">
+            <h2 class="experience-sub-title">Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark_light.webp"
+                  src-light="./assets/checkmark_light.webp"
+                  src-dark="./assets/checkmark_dark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.webp"
+                  src-light="./assets/checkmark_light.webp"
+                  src-dark="./assets/checkmark_dark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.webp"
+                  src-light="./assets/checkmark_light.webp"
+                  src-dark="./assets/checkmark_dark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JAVASCRIPT</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.webp"
+                  src-light="./assets/checkmark_light.webp"
+                  src-dark="./assets/checkmark_dark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TailwindCSS</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.webp"
+                  src-light="./assets/checkmark_light.webp"
+                  src-dark="./assets/checkmark_dark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Github</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.webp"
+                  src-light="./assets/checkmark_light.webp"
+                  src-dark="./assets/checkmark_dark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Visual Studio Code</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-containers">
+            <h2 class="experience-sub-title">Design</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark_light.webp"
+                  src-light="./assets/checkmark_light.webp"
+                  src-dark="./assets/checkmark_dark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Photoshop</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.webp"
+                  src-light="./assets/checkmark_light.webp"
+                  src-dark="./assets/checkmark_dark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Illustrator</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.webp"
+                  src-light="./assets/checkmark_light.webp"
+                  src-dark="./assets/checkmark_dark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>After Effects</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.webp"
+                  src-light="./assets/checkmark_light.webp"
+                  src-dark="./assets/checkmark_dark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Premiere</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.webp"
+                  src-light="./assets/checkmark_light.webp"
+                  src-dark="./assets/checkmark_dark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Photography</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark_light.webp"
+                  src-light="./assets/checkmark_light.webp"
+                  src-dark="./assets/checkmark_dark.webp"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Social Media Marketing</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="./#projects">
+        <img
+          src="./assets/arrow_light.webp"
+          src-light="./assets/arrow_light.webp"
+          src-dark="./assets/arrow_dark.webp"
+          alt="arrow icon"
+          class="icon arrow"
+        />
+      </a>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse Traci's recent</p>
+      <h2 class="title">Projects</h2>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-containers color-containers">
+            <div class="article-container">
+              <img
+                src="./assets/project-4.webp"
+                alt="The Gallerist Osaka"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              The Gallerist Osaka
+            </h2>
+            <p class="project-desc">The Gallerist Osaka is a contemporary art lounge and speakeasy. One-page website designed and developed by Traci.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://thegalleristosaka.com/'"
+              >
+                VIEW NOW
+              </button>
+            </div>
+          </div>
+          <div class="details-containers color-containers">
+            <div class="article-container">
+              <img
+                src="./assets/project-5.webp"
+                alt="Black Women in Japan"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Black Women in Japan
+            </h2>
+            <p class="project-desc">Black Women in Japan is a nonprofit organization. Developed and designed on Wordpress by Traci.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://blackwomeninjapan.com/'"
+              >
+                VIEW NOW
+              </button>
+            </div>
+          </div>
+          <div class="details-containers color-containers">
+            <div class="article-container">
+              <img
+                src="./assets/Project-1.webp"
+                alt="project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Krew App
+            </h2>
+            <p class="project-desc">Krew App was a group hackathon project focused on providing mentorship to underserved communities in Philadelphia.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://kismet-lee.github.io/Krew-App/'"
+              >
+                LIVE DEMO
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.figma.com/proto/rSJTkI8dCIToo4T4c7UBa7/Krew-Landing-Page-V2-2022?node-id=36-2&t=LmRnFYDUn3PcUdPd-1'"
+              >
+                WIREFRAMES
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a href="./#contact">
+        <img
+          src="./assets/arrow_light.webp"
+          src-light="./assets/arrow_light.webp"
+          src-dark="./assets/arrow_dark.webp"
+          alt="arrow icon"
+          class="icon arrow"
+        />
+      </a>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in touch</p>
+      <h2 class="title">Contact Traci</h2>
+      <p class="section__text__p2" style="text-align: center; width:100%; max-width: 900px;">
+        Let's reclaim our sovereignty on the web! Reach out to Traci for inquiries regarding web design and development, workshops, or any other questions you may have.
+      </p>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email_light.webp"
+            src-light="./assets/email_light.webp"
+            src-dark="./assets/email_dark.webp"
+            alt="email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:maketraci@gmail.com">Email</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin_light.webp"
+            src-light="./assets/linkedin_light.webp"
+            src-dark="./assets/linkedin_dark.webp"
+            alt="My Linkedin profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://linkedin.com/in/destiny-simmons-2b010571/'"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/destiny-simmons-2b010571/"
+              >Linkedin</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/facebook_light.webp"
+            src-light="./assets/facebook_light.webp"
+            src-dark="./assets/facebook_dark.webp"
+            alt="My Facebook Profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://www.facebook.com/profile.php?id=61592240894245'"
+          />
+          <p>
+            <a
+              href="https://www.facebook.com/profile.php?id=61592240894245"
+              >Facebook</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#workshops">Workshops</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="/_site/blog.html">Blog</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>
+        Copyright &#169; 2026 <a href="https://www.linkedin.com/in/destiny-simmons-2b010571/" target="_blank" rel="noopener noreferrer">Traci Destiny</a>. All rights reserved.
+      </p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+  </body>
+</html>
