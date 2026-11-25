@@ -5,10 +5,16 @@ permalink: /blog.html
 ---
 <h1 class="title">Recent Blog Posts</h1>
 <div class="blog-details-container">
-    <div class="text-style-1" style="text-align: center; max-width:900px; width:100%;">
-    <p class="section__text__p2">Welcome to my blog posts page! This blog covers my opinions on tech and design related things as well as thoughts about my professional work. Stay a while.</p>
+    <div style="text-align: center; max-width:900px; width:100%;">
+    <p class="section__text__p2">Welcome to my blog! Stay a while.</p>
     </div>
 </div>
 
+<div class="blog-posts-container">
 {% set postslist = collections.posts %}
 {% include "postslist.njk" %}
+</div>
+
+<div class="button-container">
+    <button class="btn btn-color-1" onclick="location.href='/index.html'">Back to Home</button>
+</div>

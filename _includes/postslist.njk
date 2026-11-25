@@ -1,13 +1,15 @@
-<ul>
-    {% for post in postslist %}
-    <li>
-        <strong>
-            <a href="{{ post.url | url }}">{{ post.data.title }}</a>
-        </strong>
-        -
-        <time datetime="{{ post.date }}">{{ post.date }}</time>
-        -
-        <span>{{ post.data.description }}</span>
-    </li>
-    {% endfor %}
-</ul>
+<article class="blog-posts-list">
+    
+    
+        {% for post in postslist %}
+        <div class="post-wrap">
+            <strong>
+                <a href="{{ post.url | url }}">{{ post.data.title }}</a>
+            </strong>
+            <time datetime="{{ post.date }}" class="ghost">{{ post.date }}</time>
+            <span>{{ post.data.description }}</span>
+        </div>
+        {% endfor %}
+    
+
+</article>
