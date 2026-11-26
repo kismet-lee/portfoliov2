@@ -600,8 +600,45 @@ footer p {
  .post-wrap{
   display: flex;
   flex-direction: column;
-  margin-bottom: 1rem;
   background: var(--primary-color-2);
   padding: 1%;
   border-radius: 4px;
  }
+
+ .post-wrap:hover {
+  background: var(--primary-color);
+  transition: all 300ms ease;
+ }
+
+ .blog-title:hover {
+    text-underline-offset: 0.25rem;
+
+ }
+
+ .pagination {
+  height: 8vh;
+  margin: 1rem auto;
+  width: 100%;
+  max-width: 900px;
+ }
+
+ /**ANIMATIONS**/
+
+ /**BLOG ANIMATIONS**/
+
+ /** @media (prefers-reduced-motion: no-preference){
+  .post-wrap{
+    opacity: 0;
+    scale: 0.8;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range: 50px 36%;
+  }
+
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+} **/

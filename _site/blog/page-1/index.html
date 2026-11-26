@@ -6,8 +6,8 @@
       content="width=device-width, initial-scale=1.0"
     />
     <!-- Primary Meta Tags -->
-    <title></title>
-    <meta name="title" content="" />
+    <title>MakeTraci Blog</title>
+    <meta name="title" content="MakeTraci Blog" />
     <meta
       name="description"
       content="Traci is a designer, developer and workshop instructor based in Osaka, Japan. Let's regain sovereignty on the web!"
@@ -19,7 +19,7 @@
       property="og:url"
       content="https://maketraci.work/"
     />
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="MakeTraci Blog" />
     <meta
       property="og:description"
       content="Traci is a designer, developer and workshop instructor based in Osaka, Japan. Let's regain sovereignty on the web!"
@@ -70,18 +70,19 @@
 </script>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-
-  </head>
+</head>
   <body>
     <nav id="desktop-nav">
+      <a href="/index.html">
       <div class="logo">Traci <span class="ghost">Destiny</span></div>
+      </a>
       <div>
         <ul class="nav-links">
-          <li><a href="/_site/index.html#about">About</a></li>
-          <li><a href="/_site/index.html#workshops">Workshops</a></li>
-          <li><a href="/_site/index.html#experience">Experience</a></li>
-          <li><a href="/_site/index.html#projects">Projects</a></li>
-          <li><a href="/_site/index.html#contact">Contact</a></li>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#workshops">Workshops</a></li>
+          <li><a href="/index.html#experience">Experience</a></li>
+          <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/index.html#contact">Contact</a></li>
           <li>
             <button id="modeToggle" class="btn-toggle">
               <img
@@ -97,7 +98,9 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Traci <span class="ghost">Destiny</span></div>
+      <a href="index.html">
+        <div class="logo">Traci <span class="ghost">Destiny</span></div>
+      </a>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -105,20 +108,20 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="/_site/index.html#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="/index.html#about" onclick="toggleMenu()">About</a></li>
           <li>
-            <a href="/_site/index.html#workshops" onclick="toggleMenu()">Workshops</a>
+            <a href="/index.html#workshops" onclick="toggleMenu()">Workshops</a>
           </li>
           <li>
-            <a href="/_site/index.html#experience" onclick="toggleMenu()"
+            <a href="/index.html#experience" onclick="toggleMenu()"
               >Experience</a
             >
           </li>
           <li>
-            <a href="/_site/index.html#projects" onclick="toggleMenu()">Projects</a>
+            <a href="/index.html#projects" onclick="toggleMenu()">Projects</a>
           </li>
           <li>
-            <a href="/_site/index.html#contact" onclick="toggleMenu()">Contact</a>
+            <a href="/index.html#contact" onclick="toggleMenu()">Contact</a>
           </li>
           <li>
             <img
@@ -134,21 +137,64 @@
       </div>
     </nav>
     
-    
+    <h1 class="title">Recent Blog Posts</h1>
+<div class="blog-details-container">
+    <div style="text-align: center; max-width:900px; width:100%;">
+    <p class="section__text__p2 ghost">Welcome to my blog! Stay a while.</p>
+    </div>
+</div>
 
-<ul>
+<div class="blog-posts-container">
+
+<article class="blog-posts-list">
+        <div class="post-wrap">
+            <strong>
+                <a href="/posts/organizeblogposts/" class="blog-title">Organize blog posts</a>
+            </strong>
+            <time datetime="Thu Nov 26 2026 09:00:00 GMT+0900 (Japan Standard Time)" class="ghost">Thu Nov 26 2026 09:00:00 GMT+0900 (Japan Standard Time)</time>
+            <span style="color: var(--secondary-color);">This is the third blog post! How do I organize my blogs?</span>
+        </div>
+</article>
+  
+<article class="blog-posts-list">
+        <div class="post-wrap">
+            <strong>
+                <a href="/posts/anotherone/" class="blog-title">Another one</a>
+            </strong>
+            <time datetime="Wed Nov 25 2026 09:00:00 GMT+0900 (Japan Standard Time)" class="ghost">Wed Nov 25 2026 09:00:00 GMT+0900 (Japan Standard Time)</time>
+            <span style="color: var(--secondary-color);">This is the second blog post! What does a list look like?</span>
+        </div>
+</article>
+  
+<article class="blog-posts-list">
+        <div class="post-wrap">
+            <strong>
+                <a href="/posts/welcome/" class="blog-title">Welcome to the blog</a>
+            </strong>
+            <time datetime="Tue Nov 24 2026 09:00:00 GMT+0900 (Japan Standard Time)" class="ghost">Tue Nov 24 2026 09:00:00 GMT+0900 (Japan Standard Time)</time>
+            <span style="color: var(--secondary-color);">This is the first blog post! Arent you as excited as I am?</span>
+        </div>
+</article>
     
-    <li>
-        <strong>
-            <a href="/posts/welcome-to-the-blog/">Welcome to the blog</a>
-        </strong>
-        -
-        <time datetime="Tue Nov 24 2026 09:00:00 GMT+0900 (Japan Standard Time)">Tue Nov 24 2026 09:00:00 GMT+0900 (Japan Standard Time)</time>
-        -
-        <span>This is the first blog post! Arent you as excited as I am?</span>
-    </li>
-    
-</ul>
+</div>
+
+<nav class="pagination" aria-label="Pagination">
+  
+    <a href="/blog/">Previous</a>
+  
+
+  
+    <a href="/blog/">1</a>
+  
+    <a href="/blog/page-1/">2</a>
+  
+
+  
+</nav>
+
+<div class="button-container">
+    <button class="btn btn-color-1" onclick="location.href='/index.html'">Back to Home</button> 
+</div>
 
     <section id="contact">
       <p class="section__text__p1">Get in touch</p>
@@ -205,12 +251,12 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="/_site/index.html#about">About</a></li>
-            <li><a href="/_site/index.html#workshops">Workshops</a></li>
-            <li><a href="/_site/index.html#experience">Experience</a></li>
-            <li><a href="/_site/index.html#projects">Projects</a></li>
-            <li><a href="/_site/index.html#contact">Contact</a></li>
-            <li><a href="/_site/blog.html">Blog</a></li>
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#workshops">Workshops</a></li>
+            <li><a href="/index.html#experience">Experience</a></li>
+            <li><a href="/index.html#projects">Projects</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+            <li><a href="/blog/">Blog</a></li>
           </ul>
         </div>
       </nav>

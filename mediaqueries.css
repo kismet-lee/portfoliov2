@@ -123,3 +123,10 @@
     text-align: justify;
   }
 }
+
+/**BLOG**/
+
+.blog-posts-container {
+  width: 90%;
+  gap: 0.5rem;
+}

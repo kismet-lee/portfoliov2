@@ -1,20 +1,38 @@
 ---
 layout: layouts/base.njk
 title: MakeTraci Blog
-permalink: /blog.html
+pagination:
+  alias: postslist
+  data: collections.posts
+  size: 4
+  reverse: true
+permalink: "/blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber }}/{% endif %}index.html"
 ---
 <h1 class="title">Recent Blog Posts</h1>
 <div class="blog-details-container">
     <div style="text-align: center; max-width:900px; width:100%;">
-    <p class="section__text__p2">Welcome to my blog! Stay a while.</p>
+    <p class="section__text__p2 ghost">Welcome to my blog! Stay a while.</p>
     </div>
 </div>
 
 <div class="blog-posts-container">
-{% set postslist = collections.posts %}
 {% include "postslist.njk" %}
 </div>
 
+<nav class="pagination" aria-label="Pagination">
+  {% if pagination.href.previous %}
+    <a href="{{ pagination.href.previous }}">Previous</a>
+  {% endif %}
+
+  {% for pageEntry in pagination.pages %}
+    <a href="{{ pagination.hrefs[loop.index0] }}">{{ loop.index }}</a>
+  {% endfor %}
+
+  {% if pagination.href.next %}
+    <a href="{{ pagination.href.next }}">Next</a>
+  {% endif %}
+</nav>
+
 <div class="button-container">
-    <button class="btn btn-color-1" onclick="location.href='/index.html'">Back to Home</button>
+    <button class="btn btn-color-1" onclick="location.href='/index.html'">Back to Home</button> 
 </div>

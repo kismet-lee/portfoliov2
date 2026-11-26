@@ -70,11 +70,12 @@
 </script>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-
-  </head>
+</head>
   <body>
     <nav id="desktop-nav">
+      <a href="/index.html">
       <div class="logo">Traci <span class="ghost">Destiny</span></div>
+      </a>
       <div>
         <ul class="nav-links">
           <li><a href="/index.html#about">About</a></li>
@@ -97,7 +98,9 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Traci <span class="ghost">Destiny</span></div>
+      <a href="index.html">
+        <div class="logo">Traci <span class="ghost">Destiny</span></div>
+      </a>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -136,37 +139,77 @@
     
     
 
+
 <article class="blog-posts-list">
-    
-    
-        
         <div class="post-wrap">
             <strong>
-                <a href="/posts/welcome/">Welcome to the blog</a>
+                <a href="/posts/welcome/" class="blog-title">Welcome to the blog</a>
             </strong>
             <time datetime="Tue Nov 24 2026 09:00:00 GMT+0900 (Japan Standard Time)" class="ghost">Tue Nov 24 2026 09:00:00 GMT+0900 (Japan Standard Time)</time>
-            <span>This is the first blog post! Arent you as excited as I am?</span>
+            <span style="color: var(--secondary-color);">This is the first blog post! Arent you as excited as I am?</span>
         </div>
-        
+</article>
+  
+<article class="blog-posts-list">
         <div class="post-wrap">
             <strong>
-                <a href="/posts/anotherone/">Another one</a>
+                <a href="/posts/anotherone/" class="blog-title">Another one</a>
             </strong>
             <time datetime="Wed Nov 25 2026 09:00:00 GMT+0900 (Japan Standard Time)" class="ghost">Wed Nov 25 2026 09:00:00 GMT+0900 (Japan Standard Time)</time>
-            <span>This is the second blog post! What does a list look like?</span>
+            <span style="color: var(--secondary-color);">This is the second blog post! What does a list look like?</span>
         </div>
-        
+</article>
+  
+<article class="blog-posts-list">
         <div class="post-wrap">
             <strong>
-                <a href="/posts/organizeblogposts/">Organize blog posts</a>
+                <a href="/posts/organizeblogposts/" class="blog-title">Organize blog posts</a>
             </strong>
             <time datetime="Thu Nov 26 2026 09:00:00 GMT+0900 (Japan Standard Time)" class="ghost">Thu Nov 26 2026 09:00:00 GMT+0900 (Japan Standard Time)</time>
-            <span>This is the third blog post! How do I organize my blogs?</span>
+            <span style="color: var(--secondary-color);">This is the third blog post! How do I organize my blogs?</span>
         </div>
-        
-    
-
 </article>
+  
+<article class="blog-posts-list">
+        <div class="post-wrap">
+            <strong>
+                <a href="/posts/herewego/" class="blog-title">Here we go</a>
+            </strong>
+            <time datetime="Fri Nov 27 2026 09:00:00 GMT+0900 (Japan Standard Time)" class="ghost">Fri Nov 27 2026 09:00:00 GMT+0900 (Japan Standard Time)</time>
+            <span style="color: var(--secondary-color);">This is the fourth blog post! I&#39;m learning how to paginate</span>
+        </div>
+</article>
+  
+<article class="blog-posts-list">
+        <div class="post-wrap">
+            <strong>
+                <a href="/posts/meh/" class="blog-title">Meh</a>
+            </strong>
+            <time datetime="Fri Nov 27 2026 09:00:00 GMT+0900 (Japan Standard Time)" class="ghost">Fri Nov 27 2026 09:00:00 GMT+0900 (Japan Standard Time)</time>
+            <span style="color: var(--secondary-color);">Trying to change the blog description color</span>
+        </div>
+</article>
+  
+<article class="blog-posts-list">
+        <div class="post-wrap">
+            <strong>
+                <a href="/posts/where/" class="blog-title">Where are my other posts?</a>
+            </strong>
+            <time datetime="Sat Nov 28 2026 09:00:00 GMT+0900 (Japan Standard Time)" class="ghost">Sat Nov 28 2026 09:00:00 GMT+0900 (Japan Standard Time)</time>
+            <span style="color: var(--secondary-color);">My posts are disappearing!</span>
+        </div>
+</article>
+  
+<article class="blog-posts-list">
+        <div class="post-wrap">
+            <strong>
+                <a href="/posts/ohok/" class="blog-title">Ohhh, okay</a>
+            </strong>
+            <time datetime="Sun Nov 29 2026 09:00:00 GMT+0900 (Japan Standard Time)" class="ghost">Sun Nov 29 2026 09:00:00 GMT+0900 (Japan Standard Time)</time>
+            <span style="color: var(--secondary-color);">Some solutions!</span>
+        </div>
+</article>
+    
 
     <section id="contact">
       <p class="section__text__p1">Get in touch</p>
@@ -228,7 +271,7 @@
             <li><a href="/index.html#experience">Experience</a></li>
             <li><a href="/index.html#projects">Projects</a></li>
             <li><a href="/index.html#contact">Contact</a></li>
-            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/blog/">Blog</a></li>
           </ul>
         </div>
       </nav>

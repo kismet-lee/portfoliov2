@@ -70,11 +70,12 @@
 </script>
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-
-  </head>
+</head>
   <body>
     <nav id="desktop-nav">
+      <a href="/index.html">
       <div class="logo">Traci <span class="ghost">Destiny</span></div>
+      </a>
       <div>
         <ul class="nav-links">
           <li><a href="/index.html#about">About</a></li>
@@ -97,7 +98,9 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Traci <span class="ghost">Destiny</span></div>
+      <a href="index.html">
+        <div class="logo">Traci <span class="ghost">Destiny</span></div>
+      </a>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -137,8 +140,14 @@
     <article class="blog-post">
 <h2>Organize blog posts</h2>
 <h3>Thu Nov 26 2026 09:00:00 GMT+0900 (Japan Standard Time)</h3>
-<img src="/assets/web-image.webp" alt="Organize blog posts"></img>
-<p><p>Welcome to the third blog post. I've learned how to make my blog posts show up at the proper url, began styling the blog page, and will then style the blog page. But I've run into a new curiosity. How do I organize my blog posts by date? It seems all of the newer ones are descending instead of ascending. Next, I'm already thinking about how to add a filter and tags for my blog posts. I guess that's where DECAP CMS will come in. Also, in the future, I would like to add a share button on top of the blog posts. This could grab the url of each post and copy it to the clip board. I know that this will require some CSS. As of right now, the blog list looks great. I will need to incorporate pagination though (and figure out where that needs to appear, maybe within my postslist.njk file?) After I incorporate pagination after 5 posts and add a way to filter them, I will the edit how the post template actually looks.</p>
+<img src="/assets/web-image.webp" alt="Organize blog posts"/>
+<p><p>Welcome to the third blog post. I've learned how to make my blog posts show up at the proper url, began styling the blog page, and will then style the blog post page. But I've run into a new curiosity.</p>
+<p>How do I organize my blog posts by date? It seems all of the newer ones are descending instead of ascending. I will try to use the flex-direction: column reverse first. But that's only a momentary fix. I will need to actually allow people to filter the posts properly.  (I've completed this with column reverse, FOR NOW.)</p>
+<p>Next, I will add tags for my blog posts. I know it's a low-priority thing. So, I won't really focus on it too much for right now. I guess that's where DECAP CMS will come in. Another low priority add will be adding a share button on top of the blog posts in the list or on the actual page. This could grab the url of each post and copy it to the clip board. I know that this will require some JS. I will refer to the small project's code I'm making everyone do for the linktree project.</p>
+<p>After that, I will be sure to add a 'back to home' button and 'back to blog' button at the bottom of each blog post. I'm wondering if it should also have other links such as previous blog and next blog. But it's a minute thing.</p>
+<p>The logo also needs to link back to the homepage, so I will adjust the base.njk template properly. (I've completed this)</p>
+<p>I'm having a lot of fun with 11ty actually. Eventually, I will need to adjust the SEO for each page. I'm wondering how I can do that when I've connected all of my headers through the template?</p>
+<p>As of right now, the blog list looks great. I will need to incorporate pagination though (and figure out where that needs to appear, maybe within my postslist.njk file?) After I incorporate pagination after 5 posts and add a way to filter them, I will the edit how the post template actually looks.</p>
 </p>
 </article>
 
@@ -202,7 +211,7 @@
             <li><a href="/index.html#experience">Experience</a></li>
             <li><a href="/index.html#projects">Projects</a></li>
             <li><a href="/index.html#contact">Contact</a></li>
-            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/blog/">Blog</a></li>
           </ul>
         </div>
       </nav>
