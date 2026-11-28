@@ -5,24 +5,22 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <!-- Primary Meta Tags -->
-    <title>MakeTraci Blog</title>
-    <meta name="title" content="MakeTraci Blog" />
+     <meta name="title" content="MakeTraci Blog" />
     <meta
       name="description"
-      content="Traci is a designer, developer and workshop instructor based in Osaka, Japan. Let's regain sovereignty on the web!"
+      content="Interested in knowing what Traci is up to? Check out her recent blog posts!"
     />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://maketraci.work/"
+      content="https://maketraci.work/blog/"
     />
     <meta property="og:title" content="MakeTraci Blog" />
     <meta
       property="og:description"
-      content="Traci is a designer, developer and workshop instructor based in Osaka, Japan. Let's regain sovereignty on the web!"
+      content="Interested in knowing what Traci is up to? Check out her recent blog posts!"
     />
     <meta
       property="og:image"
@@ -33,7 +31,7 @@
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="https://maketraci.work/"
+      content="https://maketraci.work/blog/"
     />
     <meta
       property="twitter:title"
@@ -41,14 +39,13 @@
     />
     <meta
       property="twitter:description"
-      content="Traci is a designer, developer and workshop instructor based in Osaka, Japan. Let's regain sovereignty on the web!"
+      content="Interested in knowing what Traci is up to? Check out her recent blog posts!"
     />
     <meta
       property="twitter:image"
       content="https://raw.githubusercontent.com/kismet-lee/portfolio/refs/heads/main/assets/web-image.webp"
     />
-    
-
+    <title>MakeTraci Blog</title>
     <!-- Meta Tags Generated with https://metatags.io -->
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/mediaqueries.css" />
@@ -73,15 +70,15 @@
 </head>
   <body>
     <nav id="desktop-nav">
-      <a href="/index.html">
+      <a href="https://maketraci.work/">
       <div class="logo">Traci <span class="ghost">Destiny</span></div>
       </a>
       <div>
         <ul class="nav-links">
           <li><a href="/index.html#about">About</a></li>
           <li><a href="/index.html#workshops">Workshops</a></li>
-          <li><a href="/index.html#experience">Experience</a></li>
           <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/blog/">Blog</a></li>
           <li><a href="/index.html#contact">Contact</a></li>
           <li>
             <button id="modeToggle" class="btn-toggle">
@@ -113,12 +110,10 @@
             <a href="/index.html#workshops" onclick="toggleMenu()">Workshops</a>
           </li>
           <li>
-            <a href="/index.html#experience" onclick="toggleMenu()"
-              >Experience</a
-            >
+            <a href="/index.html#projects" onclick="toggleMenu()">Projects</a>
           </li>
           <li>
-            <a href="/index.html#projects" onclick="toggleMenu()">Projects</a>
+            <a href="/blog/" onclick="toggleMenu()">Blog</a>
           </li>
           <li>
             <a href="/index.html#contact" onclick="toggleMenu()">Contact</a>
@@ -180,14 +175,27 @@
 
 <nav class="pagination" aria-label="Pagination">
   
-    <a href="/blog/">Previous</a>
+    <a href="/blog/">
+      Previous
+    </a>
   
 
   
-    <a href="/blog/">1</a>
-  
-    <a href="/blog/page-1/">2</a>
-  
+    
+      <a 
+        href="/blog/" 
+        
+        >
+        1
+      </a>
+    
+      <a 
+        href="/blog/page-1/" 
+         aria-current="page" 
+        >
+        2
+      </a>
+    
 
   
 </nav>
@@ -229,22 +237,6 @@
             >
           </p>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="/assets/facebook_light.webp"
-            src-light="/assets/facebook_light.webp"
-            src-dark="/assets/facebook_dark.webp"
-            alt="My Facebook Profile"
-            class="icon linkedin-icon"
-            onclick="location.href='https://www.facebook.com/profile.php?id=61592240894245'"
-          />
-          <p>
-            <a
-              href="https://www.facebook.com/profile.php?id=61592240894245"
-              >Facebook</a
-            >
-          </p>
-        </div>
       </div>
     </section>
     <footer>
@@ -255,8 +247,8 @@
             <li><a href="/index.html#workshops">Workshops</a></li>
             <li><a href="/index.html#experience">Experience</a></li>
             <li><a href="/index.html#projects">Projects</a></li>
-            <li><a href="/index.html#contact">Contact</a></li>
             <li><a href="/blog/">Blog</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
           </ul>
         </div>
       </nav>

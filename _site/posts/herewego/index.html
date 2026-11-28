@@ -5,24 +5,22 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <!-- Primary Meta Tags -->
-    <title>Here we go</title>
-    <meta name="title" content="Here we go" />
+     <meta name="title" content="Here we go" />
     <meta
       name="description"
-      content="Traci is a designer, developer and workshop instructor based in Osaka, Japan. Let's regain sovereignty on the web!"
+      content="Interested in knowing what Traci is up to? Check out her recent blog posts!"
     />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://maketraci.work/"
+      content="https://maketraci.work/blog/"
     />
     <meta property="og:title" content="Here we go" />
     <meta
       property="og:description"
-      content="Traci is a designer, developer and workshop instructor based in Osaka, Japan. Let's regain sovereignty on the web!"
+      content="Interested in knowing what Traci is up to? Check out her recent blog posts!"
     />
     <meta
       property="og:image"
@@ -33,7 +31,7 @@
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="https://maketraci.work/"
+      content="https://maketraci.work/blog/"
     />
     <meta
       property="twitter:title"
@@ -41,14 +39,13 @@
     />
     <meta
       property="twitter:description"
-      content="Traci is a designer, developer and workshop instructor based in Osaka, Japan. Let's regain sovereignty on the web!"
+      content="Interested in knowing what Traci is up to? Check out her recent blog posts!"
     />
     <meta
       property="twitter:image"
       content="https://raw.githubusercontent.com/kismet-lee/portfolio/refs/heads/main/assets/web-image.webp"
     />
-    
-
+    <title>Here we go</title>
     <!-- Meta Tags Generated with https://metatags.io -->
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/mediaqueries.css" />
@@ -73,15 +70,15 @@
 </head>
   <body>
     <nav id="desktop-nav">
-      <a href="/index.html">
+      <a href="https://maketraci.work/">
       <div class="logo">Traci <span class="ghost">Destiny</span></div>
       </a>
       <div>
         <ul class="nav-links">
           <li><a href="/index.html#about">About</a></li>
           <li><a href="/index.html#workshops">Workshops</a></li>
-          <li><a href="/index.html#experience">Experience</a></li>
           <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/blog/">Blog</a></li>
           <li><a href="/index.html#contact">Contact</a></li>
           <li>
             <button id="modeToggle" class="btn-toggle">
@@ -113,12 +110,10 @@
             <a href="/index.html#workshops" onclick="toggleMenu()">Workshops</a>
           </li>
           <li>
-            <a href="/index.html#experience" onclick="toggleMenu()"
-              >Experience</a
-            >
+            <a href="/index.html#projects" onclick="toggleMenu()">Projects</a>
           </li>
           <li>
-            <a href="/index.html#projects" onclick="toggleMenu()">Projects</a>
+            <a href="/blog/" onclick="toggleMenu()">Blog</a>
           </li>
           <li>
             <a href="/index.html#contact" onclick="toggleMenu()">Contact</a>
@@ -140,11 +135,15 @@
     <article class="blog-post">
 <h2>Here we go</h2>
 <h3>Fri Nov 27 2026 09:00:00 GMT+0900 (Japan Standard Time)</h3>
-<img src="/assets/web-image.webp" alt="Here we go"/>
+<img src="/assets/web-image.webp" alt="Here we go" class="blog-img"/>
 <p><p>I have marked off a few to dos in my previous blog post. I've been using the filler blog posts as a means to keep track of my website building progress. I think this is a good way to keep track of everything and possibly make some tutorials about how to get things done in the future. I've been feeling like 11ty/eleventy doesn't have a lot of updated tutorials, but luckily, I'm finding ways to piece things together even if they're a bit older.</p>
 <p>With that being said, I've been able to find a video that discusses pagination. This fourth blog post is filler. I want five blog posts to show on each paginated page. However, for the sake of time, I'll start off with 2 since I have 4 blog posts. When I reach six, I will then know by then whether or not I'm doing the right thing with pagination or not haha.</p>
 </p>
 </article>
+<div class="button-container">
+    <button class="btn btn-color-1" onclick="location.href='/index.html'">Back to Home</button> 
+    <button class="btn btn-color-1" onclick="location.href='/blog/'"> Back to Blog</button>
+</div>
 
     <section id="contact">
       <p class="section__text__p1">Get in touch</p>
@@ -179,22 +178,6 @@
             >
           </p>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="/assets/facebook_light.webp"
-            src-light="/assets/facebook_light.webp"
-            src-dark="/assets/facebook_dark.webp"
-            alt="My Facebook Profile"
-            class="icon linkedin-icon"
-            onclick="location.href='https://www.facebook.com/profile.php?id=61592240894245'"
-          />
-          <p>
-            <a
-              href="https://www.facebook.com/profile.php?id=61592240894245"
-              >Facebook</a
-            >
-          </p>
-        </div>
       </div>
     </section>
     <footer>
@@ -205,8 +188,8 @@
             <li><a href="/index.html#workshops">Workshops</a></li>
             <li><a href="/index.html#experience">Experience</a></li>
             <li><a href="/index.html#projects">Projects</a></li>
-            <li><a href="/index.html#contact">Contact</a></li>
             <li><a href="/blog/">Blog</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
           </ul>
         </div>
       </nav>

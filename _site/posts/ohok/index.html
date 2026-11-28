@@ -5,24 +5,22 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <!-- Primary Meta Tags -->
-    <title>Ohhh, okay</title>
-    <meta name="title" content="Ohhh, okay" />
+     <meta name="title" content="Ohhh, okay" />
     <meta
       name="description"
-      content="Traci is a designer, developer and workshop instructor based in Osaka, Japan. Let's regain sovereignty on the web!"
+      content="Interested in knowing what Traci is up to? Check out her recent blog posts!"
     />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content="https://maketraci.work/"
+      content="https://maketraci.work/blog/"
     />
     <meta property="og:title" content="Ohhh, okay" />
     <meta
       property="og:description"
-      content="Traci is a designer, developer and workshop instructor based in Osaka, Japan. Let's regain sovereignty on the web!"
+      content="Interested in knowing what Traci is up to? Check out her recent blog posts!"
     />
     <meta
       property="og:image"
@@ -33,7 +31,7 @@
     <meta property="twitter:card" content="summary_large_image" />
     <meta
       property="twitter:url"
-      content="https://maketraci.work/"
+      content="https://maketraci.work/blog/"
     />
     <meta
       property="twitter:title"
@@ -41,14 +39,13 @@
     />
     <meta
       property="twitter:description"
-      content="Traci is a designer, developer and workshop instructor based in Osaka, Japan. Let's regain sovereignty on the web!"
+      content="Interested in knowing what Traci is up to? Check out her recent blog posts!"
     />
     <meta
       property="twitter:image"
       content="https://raw.githubusercontent.com/kismet-lee/portfolio/refs/heads/main/assets/web-image.webp"
     />
-    
-
+    <title>Ohhh, okay</title>
     <!-- Meta Tags Generated with https://metatags.io -->
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/mediaqueries.css" />
@@ -73,15 +70,15 @@
 </head>
   <body>
     <nav id="desktop-nav">
-      <a href="/index.html">
+      <a href="https://maketraci.work/">
       <div class="logo">Traci <span class="ghost">Destiny</span></div>
       </a>
       <div>
         <ul class="nav-links">
           <li><a href="/index.html#about">About</a></li>
           <li><a href="/index.html#workshops">Workshops</a></li>
-          <li><a href="/index.html#experience">Experience</a></li>
           <li><a href="/index.html#projects">Projects</a></li>
+          <li><a href="/blog/">Blog</a></li>
           <li><a href="/index.html#contact">Contact</a></li>
           <li>
             <button id="modeToggle" class="btn-toggle">
@@ -113,12 +110,10 @@
             <a href="/index.html#workshops" onclick="toggleMenu()">Workshops</a>
           </li>
           <li>
-            <a href="/index.html#experience" onclick="toggleMenu()"
-              >Experience</a
-            >
+            <a href="/index.html#projects" onclick="toggleMenu()">Projects</a>
           </li>
           <li>
-            <a href="/index.html#projects" onclick="toggleMenu()">Projects</a>
+            <a href="/blog/" onclick="toggleMenu()">Blog</a>
           </li>
           <li>
             <a href="/index.html#contact" onclick="toggleMenu()">Contact</a>
@@ -140,13 +135,17 @@
     <article class="blog-post">
 <h2>Ohhh, okay</h2>
 <h3>Sun Nov 29 2026 09:00:00 GMT+0900 (Japan Standard Time)</h3>
-<img src="/assets/web-image.webp" alt="Ohhh, okay"/>
+<img src="/assets/web-image.webp" alt="Ohhh, okay" class="blog-img"/>
 <p><p>So I realized that after deleting and regenerating my _site folder to see if something was wrong with my code (my posts weren't showing up how they should, updated posts not showing) I needed to fix the permalinks on my homepage and base.njk for the blog landing page. There was not a file in my _site folder called blog.html which is why after regenerating the _site folder, my blog page stopped working. I could only access it through the blog/index.html folder. So I updated the links to /blog/ in my navigation bars.</p>
 <p>Okay great, I got my blog page back. Now, I needed to learn how to do the pagination stuff. Here are some key points. I had includes and set on my blog page and one was overwriting the other which mean it wasn't rendering the blog posts properly for pagination. I had to remove the set and the blogs began populating. I can use them together, but not in this instance.</p>
 <p>Consider the permalink and what you need to add to future blogs you make. You also need to add the permalink logic and html to the page you're putting the blogs on.</p>
-<p>If I make a post.md without frontmatter information, it'll generate a blank post that only has time and date stuff.</p>
+<p>If I make a post.md without frontmatter information, it'll generate a blank post that only has time and date stuff. This is why a post showed up without a title on my page. I fixed it!</p>
 </p>
 </article>
+<div class="button-container">
+    <button class="btn btn-color-1" onclick="location.href='/index.html'">Back to Home</button> 
+    <button class="btn btn-color-1" onclick="location.href='/blog/'"> Back to Blog</button>
+</div>
 
     <section id="contact">
       <p class="section__text__p1">Get in touch</p>
@@ -181,22 +180,6 @@
             >
           </p>
         </div>
-        <div class="contact-info-container">
-          <img
-            src="/assets/facebook_light.webp"
-            src-light="/assets/facebook_light.webp"
-            src-dark="/assets/facebook_dark.webp"
-            alt="My Facebook Profile"
-            class="icon linkedin-icon"
-            onclick="location.href='https://www.facebook.com/profile.php?id=61592240894245'"
-          />
-          <p>
-            <a
-              href="https://www.facebook.com/profile.php?id=61592240894245"
-              >Facebook</a
-            >
-          </p>
-        </div>
       </div>
     </section>
     <footer>
@@ -207,8 +190,8 @@
             <li><a href="/index.html#workshops">Workshops</a></li>
             <li><a href="/index.html#experience">Experience</a></li>
             <li><a href="/index.html#projects">Projects</a></li>
-            <li><a href="/index.html#contact">Contact</a></li>
             <li><a href="/blog/">Blog</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
           </ul>
         </div>
       </nav>

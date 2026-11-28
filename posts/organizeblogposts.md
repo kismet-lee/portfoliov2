@@ -19,4 +19,4 @@ The logo also needs to link back to the homepage, so I will adjust the base.njk 
 
 I'm having a lot of fun with 11ty actually. Eventually, I will need to adjust the SEO for each page. I'm wondering how I can do that when I've connected all of my headers through the template?
 
-As of right now, the blog list looks great. I will need to incorporate pagination though (and figure out where that needs to appear, maybe within my postslist.njk file?) After I incorporate pagination after 5 posts and add a way to filter them, I will the edit how the post template actually looks.
+As of right now, the blog list looks great. I will need to incorporate pagination though (and figure out where that needs to appear, maybe within my postslist.njk file?) After I incorporate pagination after 5 posts and add a way to filter them, I will the edit how the post template actually looks. (I've completed this)

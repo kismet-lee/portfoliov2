@@ -4,6 +4,10 @@ layout: layouts/base.njk
 <article class="blog-post">
 <h2>{{ title }}</h2>
 <h3>{{ date }}</h3>
-<img src="{{ featuredImage | url }}" alt="{{title}}"/>
+<img src="{{ featuredImage | url }}" alt="{{title}}" class="blog-img"/>
 <p>{{ content | safe }}</p>
 </article>
+<div class="button-container">
+    <button class="btn btn-color-1" onclick="location.href='/index.html'">Back to Home</button> 
+    <button class="btn btn-color-1" onclick="location.href='/blog/'"> Back to Blog</button>
+</div>

@@ -13,4 +13,4 @@ Okay great, I got my blog page back. Now, I needed to learn how to do the pagina
 
 Consider the permalink and what you need to add to future blogs you make. You also need to add the permalink logic and html to the page you're putting the blogs on.
 
-If I make a post.md without frontmatter information, it'll generate a blank post that only has time and date stuff.
+If I make a post.md without frontmatter information, it'll generate a blank post that only has time and date stuff. This is why a post showed up without a title on my page. I fixed it!

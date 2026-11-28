@@ -21,15 +21,25 @@ permalink: "/blog/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumbe
 
 <nav class="pagination" aria-label="Pagination">
   {% if pagination.href.previous %}
-    <a href="{{ pagination.href.previous }}">Previous</a>
+    <a href="{{ pagination.href.previous }}">
+      Previous
+    </a>
   {% endif %}
 
-  {% for pageEntry in pagination.pages %}
-    <a href="{{ pagination.hrefs[loop.index0] }}">{{ loop.index }}</a>
-  {% endfor %}
+  
+    {% for pageEntry in pagination.pages %}
+      <a 
+        href="{{ pagination.hrefs[loop.index0] }}" 
+        {% if page.url == pagination.hrefs[loop.index0] %} aria-current="page" {% endif %}
+        >
+        {{ loop.index }}
+      </a>
+    {% endfor %}
 
   {% if pagination.href.next %}
-    <a href="{{ pagination.href.next }}">Next</a>
+    <a href="{{ pagination.href.next }}">
+      Next
+    </a>
   {% endif %}
 </nav>
 
